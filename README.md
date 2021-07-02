@@ -23,3 +23,4 @@ The third idea was a customer purchasing log with customer ids and transactions 
 The second Idea was a user database with authentication levels allowing the administrator to lock certain files behind different access levels. I felt this to be the most relevant Idea to my work aspirations and I felt most confident with the theory of it. 
 
 ![ERD](https://imgur.com/a/Pr5eW7R)
+![Imgur](https://imgur.com/zqFzORE)
