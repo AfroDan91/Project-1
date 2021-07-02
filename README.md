@@ -21,3 +21,5 @@ I initially liked this idea as it relates to a game I am very passionate about h
 The third idea was a customer purchasing log with customer ids and transactions history, allowing insights into purchase behavior. And the fourth was a country vs currency and the exchange rate between them however I rejected both as I thought more about the second and came to the conclusion that it was the most relevant and easiest to map out in my mind. 
 
 The second Idea was a user database with authentication levels allowing the administrator to lock certain files behind different access levels. I felt this to be the most relevant Idea to my work aspirations and I felt most confident with the theory of it. 
+
+![ERD](https://imgur.com/a/Pr5eW7R)
