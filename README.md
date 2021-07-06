@@ -22,24 +22,19 @@ The third idea was a customer purchasing log with customer ids and transactions 
 
 The second Idea was a user database with authentication levels allowing the administrator to lock certain files behind different access levels. I felt this to be the most relevant Idea to my work aspirations and I felt most confident with the theory of it. 
 
+Having worked on the user database and mapping it out in an ERD I came to the conclusion that the idea in its current form would require 3-4 databases all of which would need their own CRUD functionality to act in the way I envisaged. This lead me to simplifying it down to its 2 main components, users and roles. The application would now focus on delivering a a series of roles and a database with users who can be assigned to a given role. This would account for the desired CRUD functionality while being much more realistically achievable.
+On the bright side the factors that were dropped for now will provide excellent stretch goals should it achieve its man functionality with time to spare. 
+
 ### **Design Outline** 
-For my application I have decided to go with a file restriction tool. To begin creating this I will need to design multiple databases to house my users, access levels and accessible files.
-To display these I have created an entity relationship diagram displaying the 3 main components of my app.
-
-![ERD1](https://i.imgur.com/zqFzORE.png)
-
-As you can see from the picture, mapping it out made apparent an issue with my relational databases. 
-Due to using MySQL to build my data bases and they don't support many-to-many relations I will needed to amend my diagram and input an additional step to split the relation from Users to Files.
-
-The resolution to my issue came in the form of a new database called Authenticator which stands as buffer between the Users and Files databases. 
-
-![ERD2](https://i.imgur.com/hx79vUr.png)
-
-This resolves the many-to-many issue by combining the files into groups allowing for multiple users to access 1 group but the group contains multiple files. 
-
-
-The EDR design I settled on looks like this;
+In the beginning  I decided to go with a file restriction tool. To begin creating this I will need to design multiple databases to house my users, access levels and accessible files.
+To visualise these I created an entity relationship diagram displaying the 4 components that make up my app
 
 ![ERD4](https://i.imgur.com/7IW14a7.png)
 
-As you can see its a lot different from how it was originally, these diagrams are very important for mapping out databases before building them to avoid running into these problems when there are potentially thousands of entries that my need amending.  
+It was at this point the scale of the idea became apparent and its viability called into question. 
+I used the ERD to distil my idea down to its main components and mapped them out in a new ERD. This idea cuts out the majority of the chaff while still maintaining the the essence of the concept and core CRUD functionality.
+The EDR design I settled on looks like this;
+
+![ERD2](https://i.imgur.com/510ur8K.png[/img)
+
+As you can see its a lot different from how it was originally, these diagrams are very important for mapping out databases before building them to avoid running into these problems when there are potentially thousands of entries that my need amending. 
