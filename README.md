@@ -35,7 +35,7 @@ It was at this point the scale of the idea became apparent and its viability cal
 I used the ERD to distil my idea down to its main components and mapped them out in a new ERD. This idea cuts out the majority of the chaff while still maintaining the the essence of the concept and core CRUD functionality.
 The EDR design I settled on looks like this;
 
-![ERD2](https://i.imgur.com/510ur8K.png)
+![ERD2](https://i.imgur.com/sIBZM0I.png)
 
 As you can see its a lot different from how it was originally, these diagrams are very important for mapping out databases before building them to avoid running into these problems when there are potentially thousands of entries that my need amending. 
 
