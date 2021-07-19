@@ -1,0 +1,15 @@
+{% extends "global.html" %}
+<html>
+    <body>
+        {% block body %}
+        {%if len(list1) == 0 %}
+            <p>There are no employees registered yet.</p>
+        {%else%}
+            {%for emp in emps%}
+                <p>{{emp}}</p>
+            {%endfor%}
+        {%endif%}
+
+        {% endblock body %}
+    </body>
+</html>

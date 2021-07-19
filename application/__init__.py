@@ -7,6 +7,8 @@ app = Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = str(os.getenv('database_uri'))
 
+app.config['SECRET_KEY'] = str(os.getenv('secret_key'))
+
 db = SQLAlchemy(app)
 
 from application import routes
