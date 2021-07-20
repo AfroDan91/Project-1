@@ -1,36 +1,82 @@
 from flask import Flask, redirect, url_for, render_template, request
-from application import app, db
-from application.models import Employees, Departments, Add_Employee, Select_Department
+from sqlalchemy.orm import session
+from . import app, db
+from .models import Employees, Departments, Add_Employee, Select_Department
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 
-app = Flask(__name__)
 
-@app.route('/')
+
+@app.route("/")
 @app.route('/home', methods=['GET', 'POST'])
 def home():
-    emp_list = Employees.query.all()
-    list2 = []
-    for emp in emp_list:
-        list2.append([emp.emp_fname, emp.emp_lname, emp.emp, emp.dep_name])
-    return render_template('home.html', emps=list2)
+    form = Add_Employee()
+    emp_list = Employees.query.all() #brings the database of employees in 
+    deps = Departments.query.all()
 
-    pass
+    return render_template('home.html', emps=emp_list, form=form)
 
+@app.route('/create_employee', methods=['GET', 'POST'])
+def add_emp():
+    form = Add_Employee()
+    if request.method == 'POST':
+        deps = Departments.query.all()
+        form.works_in.choices = [(dep.dep_id, dep.dep_name) for dep in deps]
+
+        new_emp = Employees(
+                        emp_fname=form.emp_fname.data, emp_lname=form.emp_lname.data,
+                        emp_email=form.emp_email.data, department_id=form.works_in.data
+                            )
+        db.session.add(new_emp)
+        db.session.commit()
+
+        return redirect(url_for('home'))
+    
+    else:
+        deps = Departments.query.all()
+        form.works_in.choices = [(dep.dep_id, dep.dep_name) for dep in deps]
+
+        return render_template('add.html', form=form)
+
+    
 @app.route('/employees')
 def emp():
     pass
 
-app.route('/department')
+@app.route('/department')
 def dep():
-    pass
+    deps = Departments.query.limit(5).all()
+    list2 = []
+    for dep in deps:
+        list2.append([dep.dep_name])
 
-app.route('/about')
+    return render_template('deps.html', deps=list2)
+
+@app.route('/about')
 def about():
     pass
 
-if __name__=='__main__':
-    app.run(debug=True, host='0.0.0.0')
+@app.route('/update/<int:id>', methods=['GET', 'POST'])
+def update_role(id):
+    form = Add_Employee()
+    e2u = Employees.query.get(id)
+    deps = Departments.query.all()
+    form.works_in.choices = [(dep.dep_id, dep.dep_name) for dep in deps]
+    if request.method == 'POST':
+        e2u.department_id= form.works_in.data
+        db.session.commit()
+        return redirect(url_for('home'))
+                            
+
+    else:
+        return render_template('update.html', form=form)
+
+@app.route('/delete/<int:id>')
+def del_emp(id):
+    e2r = Employees.query.get(id)
+    db.session.delete(e2r)
+    db.session.commit()
+    return redirect(url_for('home'))
 
 
 
@@ -99,4 +145,4 @@ if __name__=='__main__':
 #         db.session.commit()
 #         return redirect(url_for('showt'))  
 
-#     return render_template('delete.html', form=form) #task=task_name, desc=taskdesc)
+        #return render_template('delete.html', form=form) #task=task_name, desc=taskdesc)

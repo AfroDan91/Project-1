@@ -11,4 +11,4 @@ app.config['SECRET_KEY'] = str(os.getenv('secret_key'))
 
 db = SQLAlchemy(app)
 
-from application import routes
+from . import routes

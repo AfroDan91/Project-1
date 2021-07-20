@@ -1,8 +1,8 @@
 from application import db
 from application.models import Employees, Departments, Add_Employee, Select_Department
 
-# db.drop_all()
-# db.create_all()
+db.drop_all()
+db.create_all()
 sales = Departments(dep_name = 'Sales')
 hr = Departments(dep_name = 'Human Resources')
 ceo = Departments(dep_name = 'CEO')
@@ -14,10 +14,8 @@ db.session.add(sales)
 db.session.add(hr)
 db.session.add(ceo)
 db.session.add(cs)
-
-    # emp_fname = db.Column(db.String(25),nullable=False)
-    # emp_lname = db.Column(db.String(25),nullable=False)
-    # emp_email = db.Column(db.String(50),nullable=False)
+db.session.add(jani)
+db.session.add(letgo)
 
 dan = Employees(emp_fname = 'Daniel', emp_lname = 'Wordie', emp_email = 'daniel@aol.com', departments = Departments(dep_name='Janitor'))
 grant = Employees(emp_fname = 'Grant', emp_lname = 'Cornish', emp_email = 'k08@ntlworld.com', departments = Departments(dep_name='Janitor'))
