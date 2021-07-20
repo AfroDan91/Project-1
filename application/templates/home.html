@@ -2,14 +2,15 @@
 <html>
 
     {% block body %}
-    {%if list1 == 0 %}
-        <p>There are no employees registered yet.</p>
-    {%else%}
-        {%for emp in emps%}
-            <p>{{emp}}</p>
-        {%endfor%}
-    {%endif%}
 
+        {%for emp in emps%}
+            {{ "{0.emp_fname} {0.emp_lname} | {0.departments.dep_name} ".format(emp) }} <br>
+            <a href="{{ url_for('del_emp', id=emp.emp_id) }}">Delete</a> 
+            <a href="{{ url_for('update_role', id=emp.emp_id) }}">Update Role</a>
+            <br>
+            <br>
+        {%endfor%}
+   
     {% endblock body %}
 
 </html>
