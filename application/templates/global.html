@@ -1,12 +1,12 @@
 <html>
-<body>
-<h3>Links: <a href="{{ url_for('showt') }}">Home</a> 
-<a href="{{ url_for('add_task') }}">Add Task</a>     
-<a href="{{ url_for('showc') }}">Completed Tasks</a> 
-<a href="{{ url_for('udesc') }}">Update Description</a>
-<a href="{{ url_for('td') }}">Delete Task</a>
-</h3>
-{% block body %}
-{% endblock body %}
-</body>
+    <body>
+        <h3>Links: 
+            <a href="{{ url_for('home') }}">Home</a> 
+            <a href="{{ url_for('add_emp') }}">Add Employee</a> 
+            <a href="{{ url_for('dep') }}">View Departments</a>     
+        </h3>
+    {% block body %}
+
+    {% endblock body %}
+    </body>
 </html>
