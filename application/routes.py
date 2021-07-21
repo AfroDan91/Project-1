@@ -39,9 +39,9 @@ def add_emp():
         return render_template('add.html', form=form)
 
     
-@app.route('/employees')
-def emp():
-    pass
+# @app.route('/employees')
+# def emp():
+#     pass
 
 @app.route('/department')
 def dep():
@@ -52,9 +52,9 @@ def dep():
 
     return render_template('deps.html', deps=list2)
 
-@app.route('/about')
-def about():
-    pass
+# @app.route('/about')
+# def about():
+#     pass
 
 @app.route('/update/<int:id>', methods=['GET', 'POST'])
 def update_role(id):
