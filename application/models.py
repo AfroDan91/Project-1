@@ -28,3 +28,5 @@ class Add_Employee(FlaskForm):
 class Select_Department(FlaskForm):
     department = SelectField('Pick a department', choices=[])
     submit = SubmitField('Add Task')
+
+    #test to see if jenkins works
