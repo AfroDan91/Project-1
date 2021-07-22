@@ -106,7 +106,7 @@ But the main thing is that they keep the code working. It is very easy when not 
 To conduct my unit testing I used Pytest and pytest-cov, both were installed using the pip3 installation method. 
 The results of the tests were:
 
-![Pytest1](https://i.imgur.com/8asrsuK.png)
+![Pytest1](https://i.imgur.com/P6omcMa.png)
 
-During the test implementation I was unable to write effective tests for my select field forms, as a result I have a sub optimal coverage report. However the manual tests I did worked perfectly. Information was able to be added, read and removed from the database as expected. 
-If I have another sprint on this project one of my main priorities would be getting my coverage to 100% and adding additional test cases to improve the detection of issues involving edge cases.
+These tests confirm that information was able to be added, read and removed from the database and that the HTML displayed that information as expected. 
+If I have another sprint on this project one of my main priorities would be adding additional test cases to improve the detection of issues involving edge cases.
