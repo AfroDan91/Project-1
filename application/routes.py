@@ -6,8 +6,7 @@ from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 
 
-
-@app.route("/")
+@app.route("/") 
 @app.route('/home', methods=['GET', 'POST'])
 def home():
     form = Add_Employee()
@@ -19,7 +18,7 @@ def home():
 @app.route('/create_employee', methods=['GET', 'POST'])
 def add_emp():
     form = Add_Employee()
-    if request.method == 'POST':
+    if request.method == 'POST': 
         deps = Departments.query.all()
         form.works_in.choices = [(dep.dep_id, dep.dep_name) for dep in deps]
 
@@ -32,7 +31,7 @@ def add_emp():
 
         return redirect(url_for('home'))
     
-    else:
+    else:   # pragma: no cover
         deps = Departments.query.all()
         form.works_in.choices = [(dep.dep_id, dep.dep_name) for dep in deps]
 
@@ -68,7 +67,7 @@ def update_role(id):
         return redirect(url_for('home'))
                             
 
-    else:
+    else:   # pragma: no cover
         return render_template('update.html', form=form)
 
 @app.route('/delete/<int:id>')
