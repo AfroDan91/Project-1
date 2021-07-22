@@ -39,17 +39,22 @@ The EDR design I settled on looks like this;
 
 As you can see its a lot different from how it was originally, these diagrams are very important for mapping out databases before building them to avoid running into these problems when there are potentially thousands of entries that my need amending. 
 
-Full evolution of my ERD can be seen below
+I have included all the different forms my ERD took, in order of creation, below:
 <details>
-  <summary>Click to expand!</summary>
+ <summary>Click to expand!</summary>
   
-  ## Heading
-  1. A numbered
-  2. list
-     * With some
-     * Sub bullets
+![ERD3](https://i.imgur.com/zqFzORE.png)
 
-    <summary>Click to expand!</summary>
+![ERD4](https://i.imgur.com/hx79vUr.png)
+
+![ERD5](https://i.imgur.com/EiOhQo5.png)
+
+![ERD6](https://i.imgur.com/7IW14a7.png)
+
+![ERD7](https://i.imgur.com/510ur8K.png)
+
+![ERD8](https://i.imgur.com/7VHvHw7.png)
+
 </details>
 
 ### Risk Assessments
