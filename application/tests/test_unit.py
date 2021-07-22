@@ -98,6 +98,7 @@ class TestDel(TestBase):
             follow_redirects=True
             )
         assert "Daniel" not in response.data.decode()
+        self.assertEqual(response.status_code, 200)
 
 
 
