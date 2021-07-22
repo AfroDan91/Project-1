@@ -91,3 +91,22 @@ As the project matured so did the content and design of by Jira board. Towards t
 ![Jira2](https://i.imgur.com/zT5XCN3.png)
 
 I added user stories throughout the development process as each parts design brought up new features and functionality that could be added that I never thought of during the initial brainstorming. 
+
+
+### Test Driven Development
+
+
+The next step in the development process is the use of unit testing. Both the Agile and DevOps principles teach the benefits of this in the way they operate. 
+Some of the key benefits of carrying out unit tests are:
+- They decrease the Time to Discovery (TTD)
+- They allow for a wide range of tests to be completed at once.
+- They only need to be written once
+But the main thing is that they keep the code working. It is very easy when not running tests like these to make a change that has ripple effects out of the expected working area. As the scope of unit tests can span the width of your entire project its very easy to detect these with 1 line of code in the terminal.
+
+To conduct my unit testing I used Pytest and pytest-cov, both were installed using the pip3 installation method. 
+The results of the tests were:
+
+![Pytest1](https://i.imgur.com/8asrsuK.png)
+
+During the test implementation I was unable to write effective tests for my select field forms, as a result I have a sub optimal coverage report. However the manual tests I did worked perfectly. Information was able to be added, read and removed from the database as expected. 
+If I have another sprint on this project one of my main priorities would be getting my coverage to 100% and adding additional test cases to improve the detection of issues involving edge cases.
