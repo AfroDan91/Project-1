@@ -39,7 +39,7 @@ The EDR design I settled on looks like this;
 
 As you can see its a lot different from how it was originally, these diagrams are very important for mapping out databases before building them to avoid running into these problems when there are potentially thousands of entries that my need amending. 
 
-# A collapsible section with markdown
+Full evolution of my ERD can be seen below
 <details>
   <summary>Click to expand!</summary>
   
@@ -48,6 +48,8 @@ As you can see its a lot different from how it was originally, these diagrams ar
   2. list
      * With some
      * Sub bullets
+
+    <summary>Click to expand!</summary>
 </details>
 
 ### Risk Assessments
