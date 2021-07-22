@@ -6,10 +6,13 @@ from flask_testing import TestCase
 from application import app, db
 from application.models import Employees, Departments
 
+
+
 class TestBase(TestCase):
     def create_app(self):
         app.config.update(
             SQLALCHEMY_DATABASE_URI="sqlite:///test.db",
+            SECRET_KEY = 'YOUR_SECRET_KEY',
             WTF_CSRF_ENEBLED=False
         )
 
@@ -61,16 +64,15 @@ class TestCreate(TestBase):
     def test_add_emp(self):
         
         with self.client:
-            
             response = self.client.post(
-                '/create_employee',
-    #            data={"emp_fname": "bob", "emp_lname": "bob", "emp_email": "bob", "works_in" :departments},
-                data=dict(emp_fname = "bob", emp_lname = "bob", emp_email = "bob", dep_id = Departments(dep_id = 'Sales')),
+                url_for("add_emp"),
+                data={"emp_fname": "bob", "emp_lname": "bob", "emp_email": "bob", "works_in" :'departments'},
+                #data=dict(emp_fname = "bob", emp_lname = "bob",  emp_email = "bob", dep_name =(1, 'Sales')),
                 follow_redirects=True
 
             )
-
-            #assert "bob" in response.data.decode()
+            #self.assertEqual(response.status_code, 200)
+            assert "bob" in response.data.decode()
         #self.assertIn(b'bob', response.data)
 
 
@@ -85,10 +87,10 @@ class TestUpdate(TestBase):
     def test_update_emp(self):
         response = self.client.post(
             url_for("update_role", id=1),
-            data=dict(departments=Departments(dep_name='Sales')),
+            data=dict(departments=Departments(dep_name= 'Sales')),
             follow_redirects=True
             )
-        #assert "Sales" in response.data.decode()
+        assert "Sales" in response.data.decode()
 
 
 class TestDel(TestBase):

@@ -7,7 +7,7 @@ from wtforms import StringField, SubmitField
 
 
 @app.route("/") 
-@app.route('/home', methods=['GET', 'POST'])
+@app.route('/home', methods=['GET', 'POST', 'PUT'])
 def home():
     form = Add_Employee()
     emp_list = Employees.query.all() #brings the database of employees in 
@@ -15,7 +15,7 @@ def home():
 
     return render_template('home.html', emps=emp_list, form=form)
 
-@app.route('/create_employee', methods=['GET', 'POST'])
+@app.route('/create_employee', methods=['GET', 'POST', 'PUT', 'DELETE'])
 def add_emp():
     form = Add_Employee()
     if request.method == 'POST': 
@@ -70,7 +70,7 @@ def update_role(id):
     else:   # pragma: no cover
         return render_template('update.html', form=form)
 
-@app.route('/delete/<int:id>')
+@app.route('/delete/<int:id>', methods=['GET', 'POST'])
 def del_emp(id):
     e2r = Employees.query.get(id)
     db.session.delete(e2r)

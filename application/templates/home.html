@@ -4,7 +4,7 @@
     {% block body %}
 
         {%for emp in emps%}
-            {{ "{0.emp_fname} {0.emp_lname} | {0.departments.dep_name} ".format(emp) }} <br>
+             {{emp.emp_fname}} {{emp.emp_lname}} | {{emp.departments.dep_name}}  <br>
             <a href="{{ url_for('del_emp', id=emp.emp_id) }}">Delete</a> 
             <a href="{{ url_for('update_role', id=emp.emp_id) }}">Update Role</a>
             <br>
