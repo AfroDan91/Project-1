@@ -12,6 +12,7 @@ The main skills and fundamentals this will display are:
 By displaying these core aspects of my learning I hope to show I have a working knowledge and clear understanding of the aspects and am able to effectively apply them when necessary. 
 
 
+
 ### **Design Ideas**
 I began the process of  coming up with ideas as a brainstorm which produced 4 viable results.
 
@@ -24,6 +25,8 @@ The second Idea was a user database with authentication levels allowing the admi
 
 Having worked on the user database and mapping it out in an ERD I came to the conclusion that the idea in its current form would require 3-4 databases all of which would need their own CRUD functionality to act in the way I envisaged. This lead me to simplifying it down to its 2 main components, users and roles. The application would now focus on delivering a a series of roles and a database with users who can be assigned to a given role. This would account for the desired CRUD functionality while being much more realistically achievable.
 On the bright side the factors that were dropped for now will provide excellent stretch goals should it achieve its man functionality with time to spare. 
+
+
 
 ### **Design Outline** 
 In the beginning  I decided to go with a file restriction tool. To begin creating this I will need to design multiple databases to house my users, access levels and accessible files.
@@ -57,6 +60,8 @@ I have included all the different forms my ERD took, in order of creation, below
 
 </details>
 
+
+
 ### Risk Assessments
 
 It is extremely important to conduct risk assessments on as many aspects of the applications design, deployment and continued development to help both avoid them in the first place and fix them asap.
@@ -65,3 +70,24 @@ Below is a table of identified risks, likelihood of occurring, impact level, res
 
 ![Riskass](https://i.imgur.com/M6H7xsA.png)
 
+
+
+### Project Tracking
+
+The last thing I needed to do before I could get into the physical design of the application was to utilise a project tracking tool. Using a tracking tool will help me keep on track of my ultimate goal and allow me to break down my project into smaller more manageable tasks. By doing this, I can map out a timeline to help me keep on tack with my work and ensure I don't slip behind. 
+
+The project tracking tool I used was Jira. This was chosen primarily due to it being the main one I am familiar with. Using Jira I broke my work down to a series of epics and from their further down into user stories. 
+The use of user stories really helps to imagen the app working and help envisage functionality and features to implement. 
+Jira is also a good choice due to its design being catered to an Agile methodology. Having built in sprint tracking made it easy to conduct my work while sticking to the Agile principles .
+
+My Jira board looked like this in the beginning
+
+![Jira](https://i.imgur.com/EcSxTb1.png)
+
+With epics arranged by database functionality set out in the EDR.
+
+As the project matured so did the content and design of by Jira board. Towards the end of the development process the Jira board looked like this:
+
+![Jira2](https://i.imgur.com/zT5XCN3.png)
+
+I added user stories throughout the development process as each parts design brought up new features and functionality that could be added that I never thought of during the initial brainstorming. 
