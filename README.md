@@ -105,14 +105,17 @@ Some of the key benefits of carrying out unit tests are:
 - They decrease the Time to Discovery (TTD)
 - They allow for a wide range of tests to be completed at once.
 - They only need to be written once
-But the main thing is that they keep the code working. It is very easy when not running tests like these to make a change that has ripple effects out of the expected working area. As the scope of unit tests can span the width of your entire project its very easy to detect these with 1 line of code in the terminal.
+But the two main things is that they keep the code working. It is very easy when not running tests like these to make a change that has ripple effects out of the expected working area. As the scope of unit tests can span the width of your entire project its very easy to detect these with 1 line of code in the terminal.
+
+And the user is getting the desired outcomes of their actions when interacting with the app. Working code is one of the corner stones of the Agile methodology and testing helps ensure I meet that criteria. 
 
 To conduct my unit testing I used Pytest and pytest-cov, both were installed using the pip3 installation method. 
 The results of the tests were:
 
 ![Pytest1](https://i.imgur.com/P6omcMa.png)
 
-These tests confirm that information was able to be added, read and removed from the database and that the HTML displayed that information as expected. 
+These tests confirm that information was able to be added, read and removed from the database and that the HTML displayed that information as expected.
+The coverage results also show that all major aspects of the code have been tested. It is important to test as much as possible to catch as much as possible before the code reaches the live environment. 
 
 Further more I utilised Jenkins to further automate my testing. This enabled me to get a copy of my tests each time I made a push to git hub as well as being able to run them myself. This helps mitigate the chances of broken code reaching the live environment and causing issues for the end user. 
 
