@@ -129,7 +129,7 @@ During the development of my project and its dependencies I have used a verity o
 <details>
   <summary> Source Code</summary>
   
-**Python**  
+## Python  
 I chose python as my source code to fulfill the requirements of the project as it is the language I have the most knowledge of and ability in.  It was also a good choice doe to its extensive use in the industry and as a result has many guide, information sites and knowledge bases to help during the development process. 
 In choosing python I was also able to utilize some of its modules both built in and external
 Some of the modules I used were:
@@ -140,7 +140,7 @@ Some of the modules I used were:
 
 In reflection if I was to do another project like this I would use python again as it was easy to use and find further information on. 
 
-##  Visual Studio Code
+## Visual Studio Code
 VS Code is a source-code editor which offers features including debugging, syntax highlighting, intelligent code completing and embedded git. This made it the obvious choice for me along with being something I have used in the past. 
 10/10 will use again.
 
@@ -149,7 +149,7 @@ VS Code is a source-code editor which offers features including debugging, synta
 <details>
   <summary>## Version Control</summary>
   
-  ## Git-Hub
+## Git-Hub
 Git hub was my version control service of choice as I have had some experience in it previously and it is very widely used. 
 I really enjoyed using Git Hub as it was very easy to use and worked well with other tools I used such as Jenkins. 
 If I were to work on another project like this I would definitely consider using GitHub again.
@@ -158,7 +158,7 @@ If I were to work on another project like this I would definitely consider using
 <details>
   <summary>##Project Tracking</summary>
   
-  ## Jira
+## Jira
 
 I have already given the reasons why I used Jira over other project tracking tools and should I will likely use it again on future projects. 
 
@@ -167,7 +167,7 @@ I have already given the reasons why I used Jira over other project tracking too
 <details>
   <summary>##CI Server / Unit Testing</summary>
   
-  ## Jenkins
+## Jenkins
 
 I chose Jenkins to use for both my unit testing and CI server because it is the service I have the most experience with. I made use of its web hook capabilities to automatically run my unit tests through it Which made life a lot easier when it came to the testing phase.
 
