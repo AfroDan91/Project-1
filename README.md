@@ -128,8 +128,8 @@ During the development of my project and its dependencies I have used a verity o
 
 <details>
   <summary> Source Code</summary>
-  
-## Python  
+
+## Python
 I chose python as my source code to fulfill the requirements of the project as it is the language I have the most knowledge of and ability in.  It was also a good choice doe to its extensive use in the industry and as a result has many guide, information sites and knowledge bases to help during the development process. 
 In choosing python I was also able to utilize some of its modules both built in and external
 Some of the modules I used were:
@@ -148,27 +148,27 @@ VS Code is a source-code editor which offers features including debugging, synta
 
 <details>
   <summary>## Version Control</summary>
-  
-## Git-Hub
+
+## GitHub
 Git hub was my version control service of choice as I have had some experience in it previously and it is very widely used. 
 I really enjoyed using Git Hub as it was very easy to use and worked well with other tools I used such as Jenkins. 
 If I were to work on another project like this I would definitely consider using GitHub again.
 </details>
 
 <details>
-  <summary>##Project Tracking</summary>
-  
-## Jira
 
+  <summary>##Project Tracking</summary>
+
+## Jira
 I have already given the reasons why I used Jira over other project tracking tools and should I will likely use it again on future projects. 
 
 </details>
 
 <details>
+
   <summary>##CI Server / Unit Testing</summary>
   
 ## Jenkins
-
 I chose Jenkins to use for both my unit testing and CI server because it is the service I have the most experience with. I made use of its web hook capabilities to automatically run my unit tests through it Which made life a lot easier when it came to the testing phase.
 
 I will very likely be using this again on future projects due to its ease of use. 
@@ -176,9 +176,10 @@ I will very likely be using this again on future projects due to its ease of use
 </details>
 
 <details>
+
   <summary>##Miscellaneous </summary>
   
-## Google Could Platform
+## Google Could Platform
 GCP was my cloud provider for my project due to its free trial period I made good use of the many free services it offers and will likely use it again in the future as a result of its easy to use website and easy to understand services. 
 
 ## MySQL
