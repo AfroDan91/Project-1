@@ -120,12 +120,16 @@ During the development of my project and its dependencies I have used a verity o
 <details>
   <summary>Here is a breakdown of the majority of the tools I utilized</summary>
   
+
+
 ![Pipeline]()
 
+
+
 <details>
-  <summary>## Source Code</summary>
+  <summary> Source Code</summary>
   
-  ## Python
+**Python**  
 I chose python as my source code to fulfill the requirements of the project as it is the language I have the most knowledge of and ability in.  It was also a good choice doe to its extensive use in the industry and as a result has many guide, information sites and knowledge bases to help during the development process. 
 In choosing python I was also able to utilize some of its modules both built in and external
 Some of the modules I used were:
