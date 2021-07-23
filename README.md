@@ -120,14 +120,15 @@ During the development of my project and its dependencies I have used a verity o
 <details>
   <summary>Here is a breakdown of the majority of the tools I utilized</summary>
   
+This is my pipeline. 
 
+![Pipeline](https://i.imgur.com/2TQASoi.png)
 
-![Pipeline]()
-
+It shows what tools I used and where I used them form the major elements of the projects. Below that is a more detailed breakdown of the elements, why they were used and the likelihood of using them again based on my experience with them throughout this project. 
 
 
 <details>
-  <summary> Source Code</summary>
+  <summary>Source Code</summary>
 
 ## Python
 I chose python as my source code to fulfill the requirements of the project as it is the language I have the most knowledge of and ability in.  It was also a good choice doe to its extensive use in the industry and as a result has many guide, information sites and knowledge bases to help during the development process. 
@@ -147,7 +148,7 @@ VS Code is a source-code editor which offers features including debugging, synta
 </details>
 
 <details>
-  <summary>## Version Control</summary>
+  <summary>Version Control</summary>
 
 ## GitHub
 Git hub was my version control service of choice as I have had some experience in it previously and it is very widely used. 
@@ -157,7 +158,7 @@ If I were to work on another project like this I would definitely consider using
 
 <details>
 
-  <summary>##Project Tracking</summary>
+  <summary>Project Tracking</summary>
 
 ## Jira
 I have already given the reasons why I used Jira over other project tracking tools and should I will likely use it again on future projects. 
@@ -166,7 +167,7 @@ I have already given the reasons why I used Jira over other project tracking too
 
 <details>
 
-  <summary>##CI Server / Unit Testing</summary>
+  <summary>CI Server / Unit Testing</summary>
   
 ## Jenkins
 I chose Jenkins to use for both my unit testing and CI server because it is the service I have the most experience with. I made use of its web hook capabilities to automatically run my unit tests through it Which made life a lot easier when it came to the testing phase.
@@ -177,7 +178,7 @@ I will very likely be using this again on future projects due to its ease of use
 
 <details>
 
-  <summary>##Miscellaneous </summary>
+  <summary>Miscellaneous </summary>
   
 ## Google Could Platform
 GCP was my cloud provider for my project due to its free trial period I made good use of the many free services it offers and will likely use it again in the future as a result of its easy to use website and easy to understand services. 
@@ -196,3 +197,5 @@ I will definitely be using Linux in future projects.
 
 
 </details>
+
+
