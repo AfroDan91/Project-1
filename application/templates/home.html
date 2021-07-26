@@ -1,0 +1,18 @@
+{% extends "global.html" %}
+<html>
+
+    {% block body %}
+
+        {%for emp in emps%}
+            <div class="emp">
+                {{emp.emp_fname}} {{emp.emp_lname}} | {{emp.departments.dep_name}}  <br>
+                <a href="{{ url_for('del_emp', id=emp.emp_id) }}">Delete</a> 
+                <a href="{{ url_for('update_role', id=emp.emp_id) }}">Update Role</a>
+                <br>
+                <br>
+            </div>
+        {%endfor%}
+   
+    {% endblock body %}
+
+</html>
