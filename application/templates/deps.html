@@ -1,0 +1,16 @@
+{% extends "global.html" %}
+<html>
+
+    {% block body %}
+    {% if deps == 0 %}
+        <p>There are no Departments registered yet.</p>
+    {% else %}
+        {% for dep in deps %}
+            <p>{{dep}}</p>
+        {% endfor %}
+    {% endif %}
+
+    {% endblock body %}
+
+</html>
+</html>
